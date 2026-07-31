@@ -1,0 +1,27 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/site.webmanifest
+  Content-Type: application/manifest+json; charset=utf-8
+
+/*.webp
+  Cache-Control: public, max-age=604800, immutable
+
+/*.png
+  Cache-Control: public, max-age=604800, immutable
+
+/*.jpg
+  Cache-Control: public, max-age=604800, immutable
+
+/*.mp4
+  Cache-Control: public, max-age=604800

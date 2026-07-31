@@ -7,18 +7,18 @@ $overrides = Get-Content $overridesPath -Raw -Encoding UTF8 | ConvertFrom-Json
 
 $languages = @(
     @{ id = 'en'; flag = [char]0xD83C + [char]0xDDEC + [char]0xD83C + [char]0xDDE7; name = 'English'; code = 'EN' },
-    @{ id = 'tr'; flag = [char]0xD83C + [char]0xDDF9 + [char]0xD83C + [char]0xDDF7; name = 'Türkçe'; code = 'TR' },
-    @{ id = 'ar'; flag = [char]0xD83C + [char]0xDDF8 + [char]0xD83C + [char]0xDDE6; name = 'العربية'; code = 'AR' },
+    @{ id = 'tr'; flag = [char]0xD83C + [char]0xDDF9 + [char]0xD83C + [char]0xDDF7; name = 'TÃ¼rkÃ§e'; code = 'TR' },
+    @{ id = 'ar'; flag = [char]0xD83C + [char]0xDDF8 + [char]0xD83C + [char]0xDDE6; name = 'Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©'; code = 'AR' },
     @{ id = 'de'; flag = [char]0xD83C + [char]0xDDE9 + [char]0xD83C + [char]0xDDEA; name = 'Deutsch'; code = 'DE' },
-    @{ id = 'fr'; flag = [char]0xD83C + [char]0xDDEB + [char]0xD83C + [char]0xDDF7; name = 'Français'; code = 'FR' },
-    @{ id = 'es'; flag = [char]0xD83C + [char]0xDDEA + [char]0xD83C + [char]0xDDF8; name = 'Español'; code = 'ES' },
-    @{ id = 'pt'; flag = [char]0xD83C + [char]0xDDF5 + [char]0xD83C + [char]0xDDF9; name = 'Português'; code = 'PT' },
-    @{ id = 'ru'; flag = [char]0xD83C + [char]0xDDF7 + [char]0xD83C + [char]0xDDFA; name = 'Русский'; code = 'RU' },
-    @{ id = 'ja'; flag = [char]0xD83C + [char]0xDDEF + [char]0xD83C + [char]0xDDF5; name = '日本語'; code = 'JA' },
-    @{ id = 'ko'; flag = [char]0xD83C + [char]0xDDF0 + [char]0xD83C + [char]0xDDF7; name = '한국어'; code = 'KO' },
-    @{ id = 'zh'; flag = [char]0xD83C + [char]0xDDE8 + [char]0xD83C + [char]0xDDF3; name = '中文'; code = 'ZH' },
-    @{ id = 'hi'; flag = [char]0xD83C + [char]0xDDEE + [char]0xD83C + [char]0xDDF3; name = 'हिन्दी'; code = 'HI' },
-    @{ id = 'ur'; flag = [char]0xD83C + [char]0xDDF5 + [char]0xD83C + [char]0xDDF0; name = 'اردو'; code = 'UR' },
+    @{ id = 'fr'; flag = [char]0xD83C + [char]0xDDEB + [char]0xD83C + [char]0xDDF7; name = 'FranÃ§ais'; code = 'FR' },
+    @{ id = 'es'; flag = [char]0xD83C + [char]0xDDEA + [char]0xD83C + [char]0xDDF8; name = 'EspaÃ±ol'; code = 'ES' },
+    @{ id = 'pt'; flag = [char]0xD83C + [char]0xDDF5 + [char]0xD83C + [char]0xDDF9; name = 'PortuguÃªs'; code = 'PT' },
+    @{ id = 'ru'; flag = [char]0xD83C + [char]0xDDF7 + [char]0xD83C + [char]0xDDFA; name = 'Ð ÑƒÑÑÐºÐ¸Ð¹'; code = 'RU' },
+    @{ id = 'ja'; flag = [char]0xD83C + [char]0xDDEF + [char]0xD83C + [char]0xDDF5; name = 'æ—¥æœ¬èªž'; code = 'JA' },
+    @{ id = 'ko'; flag = [char]0xD83C + [char]0xDDF0 + [char]0xD83C + [char]0xDDF7; name = 'í•œêµ­ì–´'; code = 'KO' },
+    @{ id = 'zh'; flag = [char]0xD83C + [char]0xDDE8 + [char]0xD83C + [char]0xDDF3; name = 'ä¸­æ–‡'; code = 'ZH' },
+    @{ id = 'hi'; flag = [char]0xD83C + [char]0xDDEE + [char]0xD83C + [char]0xDDF3; name = 'à¤¹à¤¿à¤¨à¥à¤¦à¥€'; code = 'HI' },
+    @{ id = 'ur'; flag = [char]0xD83C + [char]0xDDF5 + [char]0xD83C + [char]0xDDF0; name = 'Ø§Ø±Ø¯Ùˆ'; code = 'UR' },
     @{ id = 'id'; flag = [char]0xD83C + [char]0xDDEE + [char]0xD83C + [char]0xDDE9; name = 'Bahasa'; code = 'ID' },
     @{ id = 'pl'; flag = [char]0xD83C + [char]0xDDF5 + [char]0xD83C + [char]0xDDF1; name = 'Polski'; code = 'PL' },
     @{ id = 'nl'; flag = [char]0xD83C + [char]0xDDF3 + [char]0xD83C + [char]0xDDF1; name = 'Nederlands'; code = 'NL' },
@@ -35,11 +35,11 @@ $en = @{
     'nav.blog' = 'BLOG'
     'nav.getCheats' = 'Get Cheats'
     'hero.tagline' = 'Elite Security Software'
-    'hero.title' = 'Premium DOTA2 Tools Guide'
+    'hero.title' = 'Premium DOTA2 Cheats & Tools'
     'hero.desc' = 'Gain the edge in ranked with Hero ESP, full map hack, cooldown tracking, and Cloud DMA support. Built for Windows 10/11 with instant delivery and 24/7 support when patches drop.'
     'hero.viewFeatures' = 'View Features'
-    'seo.title' = 'DOTA2 Cheats & Tools | ESP, Map Hack & Cloud DMA'
-    'seo.description' = 'Premium DOTA2 cheats with Hero ESP, full map hack, cooldown tracking and Cloud DMA. From $35/month. Instant delivery, 24/7 support, Windows 10/11.'
+    'seo.title' = 'DOTA2 Cheats | Buy ESP, Map Hack & Cloud DMA Tools'
+    'seo.description' = 'Buy premium DOTA2 cheats with Hero ESP, full map hack, cooldown tracker and Cloud DMA. Instant delivery from $35/month. Windows 10/11, 24/7 support.'
     'features.title' = 'Features'
     'features.f1' = 'Hero ESP with items and level'
     'features.f2' = 'Full map hack - Remove fog of war'
@@ -57,7 +57,7 @@ $en = @{
     'features.f14' = 'AWS - option'
     'demo.title' = 'Feature Demonstration Video'
     'demo.screenshots' = 'Screenshots'
-    'demo.screenshotsHint' = 'Every feature shown in action — click any image to view it larger.'
+    'demo.screenshotsHint' = 'Every feature shown in action â€” click any image to view it larger.'
     'demo.caption1' = 'Low Poly Map Mode'
     'demo.caption2' = 'Meta Picker'
     'pricing.label' = 'Pricing'

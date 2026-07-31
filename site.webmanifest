@@ -1,7 +1,7 @@
 {
   "name": "DOTA2 Cheats & Tools",
-  "short_name": "DOTA2",
-  "description": "Premium DOTA2 cheats with Hero ESP, full map hack, cooldown tracking and Cloud DMA.",
+  "short_name": "DOTA2 Cheats",
+  "description": "Buy premium DOTA2 cheats with Hero ESP, full map hack, cooldown tracking and Cloud DMA. Instant delivery.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -12,9 +12,9 @@
   "categories": ["games", "utilities"],
   "icons": [
     {
-      "src": "https://dota2cheat.net/logo-icon.png",
-      "sizes": "62x67",
-      "type": "image/png",
+      "src": "/logo-icon.webp",
+      "sizes": "any",
+      "type": "image/webp",
       "purpose": "any"
     }
   ]
