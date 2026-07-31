@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dota2cheats.net/</loc>
     <lastmod>2026-07-31</lastmod>
@@ -26,53 +24,35 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://dota2cheats.net/?lang=nl"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://dota2cheats.net/?lang=it"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dota2cheats.net/"/>
-    <image:image>
-      <image:loc>https://dota2cheats.net/dota2-heroes.jpg</image:loc>
-      <image:title>DOTA2 Cheats — Hero ESP and Premium Tools</image:title>
-      <image:caption>Premium DOTA2 cheats with Hero ESP, map hack and Cloud DMA</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://dota2cheats.net/logo-icon.webp</image:loc>
-      <image:title>DOTA2 Cheats Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dota2cheats.net/feature-hero-esp.png</image:loc>
-      <image:title>DOTA2 Hero ESP Cheat Screenshot</image:title>
-      <image:caption>Hero ESP with items and level shown on enemies</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://dota2cheats.net/feature-map-hack.png</image:loc>
-      <image:title>DOTA2 Map Hack Screenshot</image:title>
-      <image:caption>Full map hack removing fog of war</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://dota2cheats.net/low-poly-map-mode.png</image:loc>
-      <image:title>DOTA2 Low Poly Map Mode</image:title>
-      <image:caption>Low poly map mode overview</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://dota2cheats.net/meta-picker.png</image:loc>
-      <image:title>DOTA2 Meta Picker Tool</image:title>
-      <image:caption>Meta picker hero tiers and win rates</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://dota2cheats.net/feature-cooldown.png</image:loc>
-      <image:title>DOTA2 Cooldown Tracker</image:title>
-      <image:caption>Ability cooldown tracker overlay</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://dota2cheats.net/feature-ward-esp.png</image:loc>
-      <image:title>DOTA2 Ward ESP</image:title>
-      <image:caption>Ward placement ESP highlighting wards</image:caption>
-    </image:image>
-    <video:video>
-      <video:thumbnail_loc>https://dota2cheats.net/feature-hero-esp.png</video:thumbnail_loc>
-      <video:title>DOTA2 Cheats Feature Demonstration — ESP and Map Hack</video:title>
-      <video:description>Watch DOTA2 cheats in action: Hero ESP, map hack, scripts and in-game overlays.</video:description>
-      <video:content_loc>https://dota2cheats.net/Dota%202%20Cheater%20-%20Anti-Mage%20with%20FULL%20PACK%20OF%20SCRIPTS%20-%207.41D%20!!!%20(online-video-cutter.com).mp4</video:content_loc>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:live>no</video:live>
-      <video:publication_date>2026-07-29T00:00:00+00:00</video:publication_date>
-    </video:video>
+  </url>
+  <url>
+    <loc>https://dota2cheats.net/#features</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dota2cheats.net/#demo</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dota2cheats.net/#pricing</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dota2cheats.net/#faq</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dota2cheats.net/#blog</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

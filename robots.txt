@@ -1,9 +1,13 @@
 User-agent: *
 Allow: /
+Allow: /sitemap.xml
+Allow: /sitemap_index.xml
+Allow: /robots.txt
 Disallow: /i18n-overrides.json
 Disallow: /build-i18n.js
 Disallow: /build-i18n.ps1
 Disallow: /.vscode/
+Disallow: /_headers
 
 User-agent: Googlebot
 Allow: /
@@ -15,4 +19,4 @@ User-agent: Googlebot-Image
 Allow: /
 
 Sitemap: https://dota2cheats.net/sitemap.xml
-Host: dota2cheats.net
+Sitemap: https://dota2cheats.net/sitemap_index.xml
