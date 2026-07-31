@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /i18n-overrides.json
+Disallow: /build-i18n.js
+Disallow: /build-i18n.ps1
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://dota2cheat.net/sitemap.xml
+Host: dota2cheat.net

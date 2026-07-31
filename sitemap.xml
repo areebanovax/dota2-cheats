@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    <url>
+        <loc>https://dota2cheat.net/</loc>
+        <lastmod>2026-07-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dota2cheat.net/"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://dota2cheat.net/?lang=tr"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://dota2cheat.net/?lang=ar"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://dota2cheat.net/?lang=de"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://dota2cheat.net/?lang=fr"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://dota2cheat.net/?lang=es"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://dota2cheat.net/?lang=pt"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://dota2cheat.net/?lang=ru"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://dota2cheat.net/?lang=ja"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dota2cheat.net/?lang=ko"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dota2cheat.net/?lang=zh"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://dota2cheat.net/?lang=hi"/>
+        <xhtml:link rel="alternate" hreflang="ur" href="https://dota2cheat.net/?lang=ur"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://dota2cheat.net/?lang=id"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://dota2cheat.net/?lang=pl"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://dota2cheat.net/?lang=nl"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://dota2cheat.net/?lang=it"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dota2cheat.net/"/>
+        <image:image>
+            <image:loc>https://dota2cheat.net/dota2-heroes.jpg</image:loc>
+            <image:title>DOTA2 Heroes — Premium Tools and Cheats</image:title>
+            <image:caption>DOTA2 heroes used as the main promotional image for ESP, map hack and Cloud DMA tools</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://dota2cheat.net/feature-hero-esp.png</image:loc>
+            <image:title>DOTA2 Hero ESP Screenshot</image:title>
+            <image:caption>Hero ESP with items and level shown on enemies</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://dota2cheat.net/feature-map-hack.png</image:loc>
+            <image:title>DOTA2 Map Hack Screenshot</image:title>
+            <image:caption>Full map hack removing fog of war</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://dota2cheat.net/low-poly-map-mode.png</image:loc>
+            <image:title>DOTA2 Low Poly Map Mode</image:title>
+            <image:caption>Low poly map mode overview</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://dota2cheat.net/meta-picker.png</image:loc>
+            <image:title>DOTA2 Meta Picker</image:title>
+            <image:caption>Meta picker hero tiers and win rates</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://dota2cheat.net/logo-icon.png</image:loc>
+            <image:title>DOTA2 Logo</image:title>
+        </image:image>
+        <video:video>
+            <video:thumbnail_loc>https://dota2cheat.net/feature-hero-esp.png</video:thumbnail_loc>
+            <video:title>DOTA2 Feature Demonstration Video</video:title>
+            <video:description>DOTA2 cheats demonstration showing ESP, map hack, scripts and in-game overlays.</video:description>
+            <video:content_loc>https://dota2cheat.net/Dota%202%20Cheater%20-%20Anti-Mage%20with%20FULL%20PACK%20OF%20SCRIPTS%20-%207.41D%20!!!%20(online-video-cutter.com).mp4</video:content_loc>
+            <video:family_friendly>yes</video:family_friendly>
+            <video:live>no</video:live>
+            <video:publication_date>2026-07-29T00:00:00+00:00</video:publication_date>
+        </video:video>
+    </url>
+</urlset>
