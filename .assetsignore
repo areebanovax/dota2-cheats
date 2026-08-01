@@ -1,0 +1,3 @@
+# Never upload _redirects — absolute URL rules break Workers deploy (API 100324).
+# Use Cloudflare Dashboard: Always Use HTTPS + Redirect Rules for www/apex.
+_redirects

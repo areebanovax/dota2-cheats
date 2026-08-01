@@ -1,0 +1,5 @@
+name = "dota2-cheats"
+compatibility_date = "2025-08-01"
+
+[assets]
+directory = "."
