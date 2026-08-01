@@ -33,14 +33,30 @@
 /site.webmanifest
   Content-Type: application/manifest+json; charset=utf-8
 
+/brand-48.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=86400
+
+/brand-192.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=86400
+
+/brand-512.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=86400
+
+/brand-favicon.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=86400
+
 /*.webp
-  Cache-Control: public, max-age=604800, immutable
+  Cache-Control: public, max-age=86400
 
 /*.png
-  Cache-Control: public, max-age=604800, immutable
+  Cache-Control: public, max-age=3600
 
 /*.jpg
-  Cache-Control: public, max-age=604800, immutable
+  Cache-Control: public, max-age=86400
 
 /*.mp4
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=86400
