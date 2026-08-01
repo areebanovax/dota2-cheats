@@ -37,8 +37,10 @@
     <link rel="alternate" hreflang="nl" href="https://dota2cheats.net/?lang=nl">
     <link rel="alternate" hreflang="it" href="https://dota2cheats.net/?lang=it">
     <link rel="alternate" hreflang="x-default" href="https://dota2cheats.net/">
-    <link rel="icon" href="logo-icon.webp" type="image/webp">
-    <link rel="apple-touch-icon" href="logo-icon.webp">
+    <link rel="icon" href="https://dota2cheats.net/logo-icon.webp" type="image/webp">
+    <link rel="icon" href="https://dota2cheats.net/logo-icon.png" type="image/png" sizes="64x64">
+    <link rel="apple-touch-icon" href="https://dota2cheats.net/logo-512.png" sizes="512x512">
+    <link rel="shortcut icon" href="https://dota2cheats.net/logo-icon.png">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://dota2cheats.net/sitemap.xml">
     <link rel="manifest" href="https://dota2cheats.net/site.webmanifest">
     <link rel="preload" as="image" href="https://dota2cheats.net/dota2-heroes.jpg" type="image/jpeg" fetchpriority="high">
@@ -108,13 +110,16 @@
                 "logo": {
                     "@type": "ImageObject",
                     "@id": "https://dota2cheats.net/#logo",
-                    "url": "https://dota2cheats.net/logo-icon.webp",
-                    "contentUrl": "https://dota2cheats.net/logo-icon.webp",
-                    "width": 64,
-                    "height": 64,
+                    "url": "https://dota2cheats.net/logo-512.png",
+                    "contentUrl": "https://dota2cheats.net/logo-512.png",
+                    "width": 512,
+                    "height": 512,
                     "caption": "DOTA2 Cheats logo"
                 },
-                "image": { "@id": "https://dota2cheats.net/#logo" },
+                "image": [
+                    "https://dota2cheats.net/logo-512.png",
+                    "https://dota2cheats.net/dota2-heroes.jpg"
+                ],
                 "sameAs": ["https://discord.gg/aSGZsq6VGf"],
                 "contactPoint": {
                     "@type": "ContactPoint",
@@ -2052,6 +2057,27 @@
             margin-bottom: 1.75rem;
         }
 
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            margin: 0 0 1.5rem;
+        }
+
+        .footer-social a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.78rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: var(--transition);
+        }
+
+        .footer-social a:hover {
+            color: var(--primary-bright);
+        }
+
         .footer-links {
             display: flex;
             justify-content: center;
@@ -2966,7 +2992,7 @@
                         <div class="lang-switcher" id="lang-switcher">
                             <button type="button" class="lang-switcher-btn" id="lang-toggle" aria-haspopup="listbox" aria-expanded="false">
                                 <span class="lang-flag" id="lang-current-flag">
-                                    <img src="https://flagcdn.com/w40/gb.png" alt="" class="lang-flag-img" width="22" height="16">
+                                    <img src="https://flagcdn.com/w40/gb.png" alt="English language flag" class="lang-flag-img" width="22" height="16">
                                 </span>
                                 <span id="lang-current-code">EN</span>
                                 <svg class="lang-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -2988,7 +3014,7 @@
     <section id="hero" aria-labelledby="hero-title">
         <div class="hero-content">
             <div class="hero-tagline" data-i18n="hero.tagline">Elite Security Software</div>
-            <h1 id="hero-title" data-i18n="hero.title">Premium DOTA2 Cheats &amp; Tools</h1>
+            <h1 id="hero-title" data-i18n="hero.title">Buy DOTA2 Cheats — ESP, Map Hack &amp; Cloud DMA</h1>
             <p class="hero-desc" data-i18n="hero.desc">
                 Gain the edge in ranked with Hero ESP, full map hack, cooldown tracking, and Cloud DMA support. Built for Windows 10/11 with instant delivery and 24/7 support when patches drop.
             </p>
@@ -3055,7 +3081,7 @@
                     <div class="screenshot-border-glow" aria-hidden="true"></div>
                     <div class="screenshot-media">
                         <img id="screenshot-layer-current" class="screenshot-layer" src="feature-hero-esp.png" alt="Hero ESP with items and level shown on enemies" width="960" height="540" decoding="async" fetchpriority="low">
-                        <img id="screenshot-layer-enter" class="screenshot-layer" src="feature-hero-esp.png" alt="" width="960" height="540" aria-hidden="true" style="opacity:0">
+                        <img id="screenshot-layer-enter" class="screenshot-layer" src="feature-hero-esp.png" alt="Feature screenshot transition layer" width="960" height="540" aria-hidden="true" style="opacity:0">
                     </div>
                     <div class="screenshot-switch-flash" id="screenshot-flash" aria-hidden="true"></div>
                     <div class="screenshot-switch-wipe" id="screenshot-wipe" aria-hidden="true"></div>
@@ -3076,7 +3102,7 @@
         </div>
 
         <div class="blog-cta demo-cta">
-            <a href="https://zadeyo.com/go/YURI?to=%2Fproducts%2Fdota-2-novaxware" class="btn-get-product checkout-link" data-i18n="blog.getProduct">Get Product</a>
+            <a href="https://zadeyo.com/go/YURI?to=%2Fproducts%2Fdota-2-novaxware" class="btn-get-product checkout-link">Buy DOTA2 Cheats</a>
         </div>
 
         <div class="demo-gallery-data" id="demo-gallery" aria-hidden="true">
@@ -3492,11 +3518,16 @@
 
     <!-- Footer -->
     <footer role="contentinfo">
-        <a href="#hero" class="footer-logo" aria-label="DOTA2 home">
-            <span class="logo-dot" aria-hidden="true"></span>
+        <a href="#hero" class="footer-logo" aria-label="DOTA2 Cheats home">
+            <img src="logo-icon.webp" alt="DOTA2 Cheats logo" width="36" height="36" decoding="async" style="border-radius:6px;object-fit:contain">
             DOTA2
         </a>
         <div class="footer-copyright" data-i18n="footer.copyright">&copy; 2026 DOTA2. All rights reserved. For gaming research and educational use only.</div>
+        <div class="footer-social" aria-label="Social links">
+            <a href="https://discord.gg/aSGZsq6VGf" target="_blank" rel="noopener noreferrer">Discord</a>
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdota2cheats.net%2F&text=DOTA2%20Cheats%20-%20ESP%2C%20Map%20Hack%20%26%20Cloud%20DMA" target="_blank" rel="noopener noreferrer">Share on X</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdota2cheats.net%2F" target="_blank" rel="noopener noreferrer">Share on Facebook</a>
+        </div>
         <nav aria-label="Footer">
         <ul class="footer-links">
             <li><a href="#features" data-i18n="footer.features">Features</a></li>
@@ -3561,8 +3592,9 @@
 
             var checkSvg = '<svg class="lang-option-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>';
 
-            function flagImg(country) {
-                return '<img src="https://flagcdn.com/w40/' + country + '.png" alt="" class="lang-flag-img" width="22" height="16" loading="lazy">';
+            function flagImg(country, name) {
+                var alt = (name ? String(name) : 'Language') + ' flag';
+                return '<img src="https://flagcdn.com/w40/' + country + '.png" alt="' + alt.replace(/"/g, '') + '" class="lang-flag-img" width="22" height="16" loading="lazy">';
             }
 
             function getLangMeta(lang) {
@@ -3587,7 +3619,7 @@
                     btn.setAttribute('data-lang', lang.id);
                     btn.setAttribute('role', 'option');
                     btn.innerHTML =
-                        '<span class="lang-option-flag">' + flagImg(lang.country) + '</span>' +
+                        '<span class="lang-option-flag">' + flagImg(lang.country, lang.name) + '</span>' +
                         '<span class="lang-option-name">' + lang.name + '</span>' +
                         '<span class="lang-option-code">' + lang.code + '</span>' +
                         checkSvg;
@@ -3734,7 +3766,7 @@
                 if (currentFlagImg) {
                     currentFlagImg.src = 'https://flagcdn.com/w40/' + meta.country + '.png';
                 } else {
-                    langCurrentFlag.innerHTML = flagImg(meta.country);
+                    langCurrentFlag.innerHTML = flagImg(meta.country, meta.name);
                 }
                 langCurrentCode.textContent = meta.code;
 

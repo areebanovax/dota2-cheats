@@ -12,6 +12,18 @@
   "categories": ["games", "utilities"],
   "icons": [
     {
+      "src": "/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo-icon.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
       "src": "/logo-icon.webp",
       "sizes": "any",
       "type": "image/webp",
