@@ -20,3 +20,5 @@ Allow: /
 
 Sitemap: https://dota2cheats.net/sitemap.xml
 Sitemap: https://dota2cheats.net/sitemap_index.xml
+
+# Deploy OK ecd323a-followup
