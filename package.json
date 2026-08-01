@@ -1,0 +1,7 @@
+{
+  "name": "dota2-cheats",
+  "private": true,
+  "scripts": {
+    "build": "node build.js"
+  }
+}
