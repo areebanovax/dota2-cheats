@@ -1,28 +1,29 @@
 /**
- * Canonical host enforcement for SEO (www / HTTP → https://dota2cheats.net).
- * Host redirects must NOT go in `_redirects` — Cloudflare Workers API rejects
- * absolute URLs there (error 100324) and breaks deploys.
+ * Single canonical host for SEO:
+ * any non-https or www (or other) host → https://dota2cheats.net + path/query
+ *
+ * Do NOT put host redirects in `_redirects` (Cloudflare API 100324).
  */
+const CANONICAL_HOST = "dota2cheats.net";
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const host = url.hostname.toLowerCase();
-    const proto = (request.headers.get("x-forwarded-proto") || url.protocol.replace(":", "")).toLowerCase();
+    const proto = (
+      request.headers.get("x-forwarded-proto") ||
+      url.protocol.replace(":", "")
+    ).toLowerCase();
 
-    let needsRedirect = false;
+    const needsHostFix = host !== CANONICAL_HOST;
+    const needsHttps = proto === "http";
 
-    if (host === "www.dota2cheats.net") {
-      url.hostname = "dota2cheats.net";
-      needsRedirect = true;
-    }
-
-    if (proto === "http") {
-      url.protocol = "https:";
-      needsRedirect = true;
-    }
-
-    if (needsRedirect) {
-      return Response.redirect(url.toString(), 301);
+    if (needsHostFix || needsHttps) {
+      const target = new URL(request.url);
+      target.protocol = "https:";
+      target.hostname = CANONICAL_HOST;
+      target.port = "";
+      return Response.redirect(target.toString(), 301);
     }
 
     return env.ASSETS.fetch(request);
