@@ -94,7 +94,7 @@ header {
   height: 52px;
   object-fit: contain;
   border-radius: 8px;
-  background: #000;
+  background: transparent !important;
 }
 
 .logo-text { display: flex; flex-direction: column; line-height: 1.05; }
@@ -230,7 +230,7 @@ header {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  background: #000;
+  background: transparent;
 }
 .feature-card .body { padding: 1.15rem 1.2rem 1.35rem; }
 .feature-card h2 {
@@ -247,7 +247,7 @@ header {
   height: 0;
   border-radius: 12px;
   overflow: hidden;
-  background: #000;
+  background: transparent;
   border: 1px solid var(--card-border);
   margin-bottom: 2rem;
 }
