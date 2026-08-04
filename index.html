@@ -60,7 +60,7 @@
     <meta property="og:image:width" content="1376">
     <meta property="og:image:height" content="768">
     <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:alt" content="DOTA2 heroes ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â premium tools and cheats guide">
+    <meta property="og:image:alt" content="DOTA2 heroes - premium tools and cheats guide">
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="tr_TR">
     <meta property="og:locale:alternate" content="ar_SA">
@@ -310,7 +310,7 @@
                     "contentUrl": "https://dota2cheats.net/dota2-heroes.jpg",
                     "width": 1376,
                     "height": 768,
-                    "caption": "DOTA2 heroes ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â premium tools and cheats guide"
+                    "caption": "DOTA2 heroes - premium tools and cheats guide"
                 },
                 "breadcrumb": { "@id": "https://dota2cheats.net/#breadcrumb" },
                 "speakable": {
@@ -656,12 +656,40 @@
         .nav-container {
             max-width: 1320px;
             margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
             align-items: center;
             padding: 1.25rem 2rem;
             position: relative;
             z-index: 3;
+        }
+
+        .nav-container > .logo {
+            grid-column: 1;
+            justify-self: start;
+            position: relative;
+            z-index: 1;
+        }
+
+        .nav-container > .nav-toggle,
+        .nav-container > .nav-backdrop {
+            display: none;
+        }
+
+        #main-nav {
+            display: contents;
+        }
+
+        #main-nav .nav-links {
+            grid-column: 2;
+            justify-self: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        #main-nav .nav-cta-group {
+            grid-column: 3;
+            justify-self: end;
         }
 
         .nav-container::after {
@@ -2819,14 +2847,28 @@
 
         @media (max-width: 900px) {
             .nav-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 padding: 1rem 1.25rem;
             }
 
-            .nav-toggle {
+            .nav-container > .logo {
+                grid-column: auto;
+                justify-self: auto;
+            }
+
+            .nav-container > .nav-toggle {
                 display: flex;
             }
 
+            .nav-container > .nav-backdrop {
+                display: block;
+            }
+
             #main-nav {
+                display: flex;
+                flex-direction: column;
                 position: fixed;
                 top: 0;
                 right: 0;
@@ -2848,15 +2890,17 @@
                 transform: translateX(0);
             }
 
-            .nav-links {
+            #main-nav .nav-links {
+                grid-column: auto;
+                justify-self: auto;
                 flex-direction: column;
                 align-items: stretch;
                 gap: 0;
-                padding: 5.25rem 1.35rem 2rem;
+                padding: 5.25rem 1.35rem 0;
                 width: 100%;
             }
 
-            .nav-links > li:not(.nav-cta-group) {
+            .nav-links > li {
                 border-bottom: 1px solid rgba(157, 78, 221, 0.1);
             }
 
@@ -2866,13 +2910,15 @@
                 font-size: 0.85rem;
             }
 
-            .nav-cta-group {
+            #main-nav .nav-cta-group {
+                grid-column: auto;
+                justify-self: auto;
                 flex-direction: column;
                 align-items: stretch;
                 width: 100%;
                 gap: 0.75rem;
                 margin-top: 1rem;
-                padding-top: 1rem;
+                padding: 1rem 1.35rem 2rem;
                 border-top: 1px solid rgba(157, 78, 221, 0.15);
             }
 
@@ -3063,8 +3109,8 @@
                     <li><a href="demo.html" data-i18n="nav.demo">DEMO</a></li>
                     <li><a href="blog/" data-i18n="nav.blog">BLOG</a></li>
                     <li><a href="faqs.html" data-i18n="nav.faqs">FAQS</a></li>
-                    <li><a href="#pricing" data-i18n="footer.pricing">PRICING</a></li>
-                    <li class="nav-cta-group">
+                </ul>
+                <div class="nav-cta-group">
                         <div class="lang-switcher" id="lang-switcher">
                             <button type="button" class="lang-switcher-btn" id="lang-toggle" aria-haspopup="listbox" aria-expanded="false">
                                 <span class="lang-flag" id="lang-current-flag">
@@ -3079,8 +3125,7 @@
                             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg>
                         </a>
                         <a href="https://zadeyo.com/go/AREEBA?to=%2Fproducts%2Fdota-2-novaxware" class="btn-get-access checkout-link" data-i18n="nav.getCheats">Get Cheats</a>
-                    </li>
-                </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -3090,7 +3135,7 @@
     <section id="hero" aria-labelledby="hero-title">
         <div class="hero-content">
             <div class="hero-tagline" data-i18n="hero.tagline">Elite Security Software</div>
-            <h1 id="hero-title" data-i18n="hero.title">Buy DOTA2 Cheats ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ESP, Map Hack &amp; Cloud DMA</h1>
+            <h1 id="hero-title" data-i18n="hero.title">Buy DOTA2 Cheats - ESP, Map Hack &amp; Cloud DMA</h1>
             <p class="hero-desc" data-i18n="hero.desc">
                 Gain the edge in ranked with Hero ESP, full map hack, cooldown tracking, and Cloud DMA support. Built for Windows 10/11 with instant delivery and 24/7 support when patches drop.
             </p>
@@ -3143,7 +3188,7 @@
     <section id="demo" aria-labelledby="demo-heading">
         <h2 id="demo-heading"><a href="demo.html" style="color:inherit;text-decoration:none" data-i18n="demo.title">Feature Demonstration Video</a></h2>
         <div class="video-placeholder" id="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; border-radius: 12px; overflow: hidden; background-color: #000;">
-            <video controls autoplay muted loop playsinline preload="metadata" poster="https://dota2cheats.net/feature-hero-esp.png" title="DOTA2 cheats feature demonstration ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ESP, map hack and scripts" aria-label="DOTA2 feature demonstration video" itemprop="video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 12px; z-index: 1;">
+            <video controls autoplay muted loop playsinline preload="metadata" poster="https://dota2cheats.net/feature-hero-esp.png" title="DOTA2 cheats feature demonstration - ESP, map hack and scripts" aria-label="DOTA2 feature demonstration video" itemprop="video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 12px; z-index: 1;">
                 <source src="Dota 2 Cheater - Anti-Mage with FULL PACK OF SCRIPTS - 7.41D !!! (online-video-cutter.com).mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -3351,17 +3396,123 @@
         </div>
     </section>
 
-    <!-- FAQ teaser -->
+    <!-- FAQ Section -->
     <section id="faq" aria-labelledby="faq-heading">
         <h2 class="faq-heading" id="faq-heading" data-i18n="faq.title">FAQs</h2>
-        <p class="blog-intro">Common questions about setup, patches, Cloud DMA, licenses, and payments.</p>
-        <div class="blog-cta">
-            <a href="faqs.html" class="btn-secondary">View all FAQs</a>
-            <a href="https://zadeyo.com/go/AREEBA?to=%2Fproducts%2Fdota-2-novaxware" class="btn-get-product checkout-link" style="margin-left:0.75rem">Get Cheats</a>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                    <span data-i18n="faq.q1">How do I get access after purchase?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a1">Your credentials are delivered instantly after payment. Check your email or account dashboard for login details and setup instructions.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                    <span data-i18n="faq.q2">Does it work after DOTA2 updates?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a2">Yes. Our team monitors patches around the clock and pushes micro-updates to keep the software compatible with the latest game version.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                    <span data-i18n="faq.q3">What do I need enabled on my PC?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a3">HVCI, Core Isolation, TPM, and Secure Boot must be enabled. Cloud DMA is required for full functionality.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                    <span data-i18n="faq.q4">How do I get support?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a4">Join our Discord server for 24/7 community support, or open a ticket through our support channels for direct assistance.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                    <span data-i18n="faq.q5">What's the difference between Monthly and Lifetime?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a5">Monthly gives you 31 days of access. Lifetime provides unlimited access with all future updates included at no extra cost.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                    <span data-i18n="faq.q6">What is Cloud DMA and why is it required?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a6">Cloud DMA is a hardware-level memory access method that runs externally from your game. It enables full ESP, map hack, and advanced features with minimal system impact. Read more in our <a href="blog/cloud-dma-explained.html">Cloud DMA guide</a>.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                    <span data-i18n="faq.q7">How do I install and set up the software?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a7">After purchase, download the client from your dashboard, run the installer, and follow the step-by-step setup guide. Full instructions are included with your credentials.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                    <span data-i18n="faq.q8">Can I use my license on multiple PCs?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a8">Each license is tied to one machine. Contact support if you need to transfer your license to a new PC due to hardware changes.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                    <span data-i18n="faq.q9">What payment methods do you accept?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a9">We accept major credit cards, crypto, and other secure payment options through our checkout. All transactions are encrypted and processed instantly.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                    <span data-i18n="faq.q10">Will this affect my game performance?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a10">No. The software is performance optimized and runs with low CPU and memory usage. Cloud DMA offloads processing externally so your in-game FPS stays stable.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                    <span data-i18n="faq.q11">Can I get a refund?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a11">Due to the digital nature of the product, refunds are handled on a case-by-case basis. Contact support within 24 hours of purchase if you experience technical issues.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                    <span data-i18n="faq.q12">Which Windows version is supported?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a12">Windows 10 and Windows 11 (64-bit) are fully supported. Make sure all system requirements including HVCI, TPM, and Secure Boot are enabled before installing.</p>
+                </div>
+            </div>
         </div>
     </section>
-
-    <!-- Why Us Section -->
+        <p class="blog-intro" style="margin-top:1.5rem"><a href="faqs.html">Open the full FAQs page</a> | <a href="https://discord.gg/aSGZsq6VGf" target="_blank" rel="noopener noreferrer">Discord support</a></p>
+    </section>
+<!-- Why Us Section -->
     <section id="whyus" aria-labelledby="whyus-heading">
         <h2 id="whyus-heading" data-i18n="whyus.title">Why Choose Our Premium Access Packages?</h2>
         <div class="whyus-grid">
@@ -3401,8 +3552,8 @@
                     <span class="blog-tag">Warding</span>
                 </div>
                 <h3 itemprop="headline"><a href="blog/ward-vision-guide.html" style="color:inherit;text-decoration:none">Ward vision that actually wins pubs</a></h3>
-                <p class="blog-excerpt">Why one sentry at minute twelve is not a vision plan Ã¢â‚¬â€ timing, dewards, and Roshan windows.</p>
-                <p style="margin-top:0.75rem"><a href="blog/ward-vision-guide.html">Read full guide Ã¢â€ â€™</a></p>
+                <p class="blog-excerpt">Why one sentry at minute twelve is not a vision plan - timing, dewards, and Roshan windows.</p>
+                <p style="margin-top:0.75rem"><a href="blog/ward-vision-guide.html">Read full guide here</a></p>
             </article>
 
             <article class="blog-card" id="blog-cooldowns" itemscope itemtype="https://schema.org/BlogPosting">
@@ -3412,7 +3563,7 @@
                 </div>
                 <h3 itemprop="headline"><a href="blog/cooldown-tracking.html" style="color:inherit;text-decoration:none">Cooldown tracking beats meta hero hopping</a></h3>
                 <p class="blog-excerpt">Track three spells per game instead of forcing meta picks you play badly.</p>
-                <p style="margin-top:0.75rem"><a href="blog/cooldown-tracking.html">Read full guide Ã¢â€ â€™</a></p>
+                <p style="margin-top:0.75rem"><a href="blog/cooldown-tracking.html">Read full guide here</a></p>
             </article>
 
             <article class="blog-card" id="blog-builds" itemscope itemtype="https://schema.org/BlogPosting">
@@ -3421,8 +3572,8 @@
                     <span class="blog-tag">Ranked</span>
                 </div>
                 <h3 itemprop="headline"><a href="blog/pub-builds.html" style="color:inherit;text-decoration:none">Stop copying pro builds in pub queue</a></h3>
-                <p class="blog-excerpt">Bracket builds that survive chaos pubs Ã¢â‚¬â€ not DreamLeague VODs.</p>
-                <p style="margin-top:0.75rem"><a href="blog/pub-builds.html">Read full guide Ã¢â€ â€™</a></p>
+                <p class="blog-excerpt">Bracket builds that survive chaos pubs - not DreamLeague VODs.</p>
+                <p style="margin-top:0.75rem"><a href="blog/pub-builds.html">Read full guide here</a></p>
             </article>
 
             <article class="blog-card" id="blog-map" itemscope itemtype="https://schema.org/BlogPosting">
@@ -3432,12 +3583,42 @@
                 </div>
                 <h3 itemprop="headline"><a href="blog/map-awareness.html" style="color:inherit;text-decoration:none">Map awareness when you are tilted</a></h3>
                 <p class="blog-excerpt">Minimap habits and chase rules that still work when you are tilted.</p>
-                <p style="margin-top:0.75rem"><a href="blog/map-awareness.html">Read full guide Ã¢â€ â€™</a></p>
+                <p style="margin-top:0.75rem"><a href="blog/map-awareness.html">Read full guide here</a></p>
+            </article>
+            <article class="blog-card" id="blog-esp">
+                <div class="blog-meta">
+                    <time datetime="2026-08-04">Aug 4, 2026</time>
+                    <span class="blog-tag">Features</span>
+                </div>
+                <h3><a href="blog/hero-esp-guide.html" style="color:inherit;text-decoration:none">Hero ESP for ranked pubs</a></h3>
+                <p class="blog-excerpt">How fog information changes lanes, rotations, and late-game objectives.</p>
+                <p style="margin-top:0.75rem"><a href="blog/hero-esp-guide.html">Read full guide here</a></p>
+            </article>
+
+            <article class="blog-card" id="blog-roshan">
+                <div class="blog-meta">
+                    <time datetime="2026-08-04">Aug 4, 2026</time>
+                    <span class="blog-tag">Objectives</span>
+                </div>
+                <h3><a href="blog/roshan-timer-guide.html" style="color:inherit;text-decoration:none">Roshan timer and Aegis windows</a></h3>
+                <p class="blog-excerpt">Take the pit like an information objective, then convert Aegis into towers.</p>
+                <p style="margin-top:0.75rem"><a href="blog/roshan-timer-guide.html">Read full guide here</a></p>
+            </article>
+
+            <article class="blog-card" id="blog-setup">
+                <div class="blog-meta">
+                    <time datetime="2026-08-04">Aug 4, 2026</time>
+                    <span class="blog-tag">Setup</span>
+                </div>
+                <h3><a href="blog/safe-setup-windows.html" style="color:inherit;text-decoration:none">Safe Windows setup checklist</a></h3>
+                <p class="blog-excerpt">HVCI, TPM, Secure Boot, and Cloud DMA before you open a ticket.</p>
+                <p style="margin-top:0.75rem"><a href="blog/safe-setup-windows.html">Read full guide here</a></p>
             </article>
         </div>
 
-        <div class="blog-cta">
+                <div class="blog-cta">
             <a href="blog/" class="btn-secondary" style="margin-right:0.75rem">All blog posts</a>
+            <a href="resources.html" class="btn-secondary" style="margin-right:0.75rem">Resources</a>
             <a href="https://zadeyo.com/go/AREEBA?to=%2Fproducts%2Fdota-2-novaxware" class="btn-get-product checkout-link" data-i18n="blog.getProduct">Get Product</a>
         </div>
     </section>
@@ -3462,7 +3643,7 @@
             <li><a href="demo.html" data-i18n="footer.demo">Demo</a></li>
             <li><a href="blog/" data-i18n="footer.blog">Blog</a></li>
             <li><a href="faqs.html" data-i18n="footer.faqs">FAQs</a></li>
-            <li><a href="#pricing" data-i18n="footer.pricing">Pricing</a></li>
+            <li><a href="resources.html">Resources</a></li>
         </ul>
         </nav>
     </footer>
@@ -3484,18 +3665,18 @@
             var translations = i18n.translations;
             var languages = [
                 { id: 'en', country: 'gb', name: 'English', code: 'EN' },
-                { id: 'tr', country: 'tr', name: 'TÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¼rkÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§e', code: 'TR' },
-                { id: 'ar', country: 'sa', name: 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â©', code: 'AR' },
+                { id: 'tr', country: 'tr', name: 'Turkce', code: 'TR' },
+                { id: 'ar', country: 'sa', name: 'Arabic', code: 'AR' },
                 { id: 'de', country: 'de', name: 'Deutsch', code: 'DE' },
-                { id: 'fr', country: 'fr', name: 'FranÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ais', code: 'FR' },
-                { id: 'es', country: 'es', name: 'EspaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±ol', code: 'ES' },
-                { id: 'pt', country: 'pt', name: 'PortuguÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âªs', code: 'PT' },
-                { id: 'ru', country: 'ru', name: 'ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â ÃƒÆ’Ã¢â‚¬ËœÃƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ËœÃƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬ËœÃƒâ€šÃ‚ÂÃƒÆ’Ã‚ÂÃƒâ€šÃ‚ÂºÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¸ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¹', code: 'RU' },
-                { id: 'ja', country: 'jp', name: 'ÃƒÆ’Ã‚Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬ÂÃƒâ€šÃ‚Â¥ÃƒÆ’Ã‚Â¦Ãƒâ€¦Ã¢â‚¬Å“Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¨Ãƒâ€šÃ‚ÂªÃƒâ€¦Ã‚Â¾', code: 'JA' },
-                { id: 'ko', country: 'kr', name: 'ÃƒÆ’Ã‚Â­ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢Ãƒâ€¦Ã¢â‚¬Å“ÃƒÆ’Ã‚ÂªÃƒâ€šÃ‚ÂµÃƒâ€šÃ‚Â­ÃƒÆ’Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Ãƒâ€šÃ‚Â´', code: 'KO' },
-                { id: 'zh', country: 'cn', name: 'ÃƒÆ’Ã‚Â¤Ãƒâ€šÃ‚Â¸Ãƒâ€šÃ‚Â­ÃƒÆ’Ã‚Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡', code: 'ZH' },
-                { id: 'hi', country: 'in', name: 'ÃƒÆ’Ã‚Â Ãƒâ€šÃ‚Â¤Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã‚Â Ãƒâ€šÃ‚Â¤Ãƒâ€šÃ‚Â¿ÃƒÆ’Ã‚Â Ãƒâ€šÃ‚Â¤Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã‚Â Ãƒâ€šÃ‚Â¥Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â Ãƒâ€šÃ‚Â¤Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â Ãƒâ€šÃ‚Â¥ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬', code: 'HI' },
-                { id: 'ur', country: 'pk', name: 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ', code: 'UR' },
+                { id: 'fr', country: 'fr', name: 'Francais', code: 'FR' },
+                { id: 'es', country: 'es', name: 'Espanol', code: 'ES' },
+                { id: 'pt', country: 'pt', name: 'Portugues', code: 'PT' },
+                { id: 'ru', country: 'ru', name: 'Russian', code: 'RU' },
+                { id: 'ja', country: 'jp', name: 'Japanese', code: 'JA' },
+                { id: 'ko', country: 'kr', name: 'Korean', code: 'KO' },
+                { id: 'zh', country: 'cn', name: 'Chinese', code: 'ZH' },
+                { id: 'hi', country: 'in', name: 'Hindi', code: 'HI' },
+                { id: 'ur', country: 'pk', name: 'Urdu', code: 'UR' },
                 { id: 'id', country: 'id', name: 'Bahasa', code: 'ID' },
                 { id: 'pl', country: 'pl', name: 'Polski', code: 'PL' },
                 { id: 'nl', country: 'nl', name: 'Nederlands', code: 'NL' },
