@@ -671,7 +671,7 @@
             position: relative;
             background-image:
                 linear-gradient(to bottom, rgba(7, 5, 11, 0.35) 0%, rgba(7, 5, 11, 0.55) 12%, rgba(7, 5, 11, 0.92) 85%, #07050b 100%),
-                image-set(url('dota2-heroes.webp') type('image/webp'), url('dota2-heroes.jpg') type('image/jpeg'));
+                image-set(url('../dota2-heroes.webp') type('image/webp'), url('../dota2-heroes.jpg') type('image/jpeg'));
             background-size: cover;
             background-position: center top;
             background-repeat: no-repeat;
