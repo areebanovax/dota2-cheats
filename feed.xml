@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DOTA2 Cheats Blog</title>
+    <link>https://dota2cheats.net/blog/</link>
+    <description>Long guides on ward vision, cooldowns, map awareness, Hero ESP, Roshan, Cloud DMA, and Windows setup.</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://dota2cheats.net/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ward vision that actually wins pubs</title>
+      <link>https://dota2cheats.net/blog/ward-vision-guide.html</link>
+      <guid>https://dota2cheats.net/blog/ward-vision-guide.html</guid>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 GMT</pubDate>
+      <description>Long ranked guide to DOTA2 ward timing, dewards, Roshan vision, and smoke defense.</description>
+    </item>
+    <item>
+      <title>Cooldown tracking beats meta hero hopping</title>
+      <link>https://dota2cheats.net/blog/cooldown-tracking.html</link>
+      <guid>https://dota2cheats.net/blog/cooldown-tracking.html</guid>
+      <pubDate>Thu, 19 Feb 2026 00:00:00 GMT</pubDate>
+      <description>Track three enemy cooldowns per game instead of forcing meta picks.</description>
+    </item>
+    <item>
+      <title>Map awareness under pressure</title>
+      <link>https://dota2cheats.net/blog/map-awareness.html</link>
+      <guid>https://dota2cheats.net/blog/map-awareness.html</guid>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 GMT</pubDate>
+      <description>Minimap rhythm, chase rules, and information gaps for ranked pubs.</description>
+    </item>
+    <item>
+      <title>Pub builds that survive chaos</title>
+      <link>https://dota2cheats.net/blog/pub-builds.html</link>
+      <guid>https://dota2cheats.net/blog/pub-builds.html</guid>
+      <pubDate>Fri, 30 Jan 2026 00:00:00 GMT</pubDate>
+      <description>Itemization for real pubs, not DreamLeague VODs.</description>
+    </item>
+    <item>
+      <title>Cloud DMA explained</title>
+      <link>https://dota2cheats.net/blog/cloud-dma-explained.html</link>
+      <guid>https://dota2cheats.net/blog/cloud-dma-explained.html</guid>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
+      <description>What Cloud DMA is, why it is required, and how setup works.</description>
+    </item>
+    <item>
+      <title>Hero ESP for ranked pubs</title>
+      <link>https://dota2cheats.net/blog/hero-esp-guide.html</link>
+      <guid>https://dota2cheats.net/blog/hero-esp-guide.html</guid>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+      <description>How Hero ESP changes lane, mid, and late game decisions.</description>
+    </item>
+    <item>
+      <title>Roshan timer and Aegis windows</title>
+      <link>https://dota2cheats.net/blog/roshan-timer-guide.html</link>
+      <guid>https://dota2cheats.net/blog/roshan-timer-guide.html</guid>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Take Roshan as an information objective and convert Aegis into towers.</description>
+    </item>
+    <item>
+      <title>Safe Windows setup checklist</title>
+      <link>https://dota2cheats.net/blog/safe-setup-windows.html</link>
+      <guid>https://dota2cheats.net/blog/safe-setup-windows.html</guid>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+      <description>HVCI, TPM, Secure Boot, and Cloud DMA checklist for Windows 10/11.</description>
+    </item>
+  </channel>
+</rss>
